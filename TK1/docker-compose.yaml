@@ -1,0 +1,28 @@
+name: magistracy-01-db-tk-1
+services:
+  postgres:
+    restart: always
+    image: postgres:latest
+    container_name: postgres-local
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=user
+      - POSTGRES_DB=user
+    ports:
+      - '5432:5432'
+    volumes:
+      - bt-pg-data:/var/lib/postgresql/data
+    networks:
+      - net
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "user"]
+      interval: 5s
+      timeout: 3s
+      retries: 2
+
+networks:
+  net:
+    driver: bridge
+
+volumes:
+  bt-pg-data:
