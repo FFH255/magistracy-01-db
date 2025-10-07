@@ -3,19 +3,19 @@ services:
   postgres:
     restart: always
     image: postgres:latest
-    container_name: postgres-local
+    container_name: magistracy-01-db-tk-1-postgres
     environment:
-      - POSTGRES_USER=user
-      - POSTGRES_PASSWORD=user
-      - POSTGRES_DB=user
+      - POSTGRES_USER=fadeev
+      - POSTGRES_PASSWORD=12345
     ports:
       - '5432:5432'
     volumes:
-      - bt-pg-data:/var/lib/postgresql/data
+      - magistracy-01-db-tk-1-pg-data:/var/lib/postgresql/data
+      - ./migrations:/docker-entrypoint-initdb.d
     networks:
       - net
     healthcheck:
-      test: ["CMD", "pg_isready", "-U", "user"]
+      test: ["CMD", "pg_isready", "-U", "fadeev"]
       interval: 5s
       timeout: 3s
       retries: 2
@@ -25,4 +25,4 @@ networks:
     driver: bridge
 
 volumes:
-  bt-pg-data:
+  magistracy-01-db-tk-1-pg-data:
