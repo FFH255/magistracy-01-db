@@ -1,7 +1,9 @@
-select e.name_enrollee, s.name_subject
-from enrollee e
-         inner join enrollee_subject es
-                    on e.enrollee_id = es.enrollee_id
-         inner join subject s
-                    on es.subject_id = s.subject_id
-order by s.name_subject;
+SELECT
+    e.name_enrollee AS Абитуриент
+FROM
+    enrollee e
+INNER JOIN program_enrollee pe ON e.enrollee_id = pe.enrollee_id
+INNER JOIN program p ON pe.program_id = p.program_id
+WHERE p.name_program = 'Прикладная математика и информатика'
+ORDER BY
+    p.program_id;
