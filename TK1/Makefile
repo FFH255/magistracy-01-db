@@ -1,3 +1,3 @@
-db:
-	docker compose -f docker-compose.yaml down --volumes
-	docker-compose -f docker-compose.yaml up
+run:
+	docker compose down --volumes
+	docker-compose up -d

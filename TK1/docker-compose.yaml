@@ -1,27 +1,35 @@
 name: magistracy-01-db-tk-1
 services:
   postgres:
-    restart: always
-    image: postgres:latest
+    image: postgres:18
     container_name: magistracy-01-db-tk-1-postgres
-    environment:
-      - POSTGRES_USER=fadeev
-      - POSTGRES_PASSWORD=12345
     ports:
-      - '5432:5432'
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: fadeev
+      POSTGRES_PASSWORD: user12345
+      POSTGRES_DB: tk1
     volumes:
-      - magistracy-01-db-tk-1-pg-data:/var/lib/postgresql/data
+      - magistracy-01-db-tk-1-pg-data:/var/lib/postgresql
       - ./migrations:/docker-entrypoint-initdb.d
     networks:
-      - net
+      - private
     healthcheck:
-      test: ["CMD", "pg_isready", "-U", "fadeev"]
-      interval: 5s
+      test:
+        [
+          "CMD",
+          "pg_isready",
+          "-U",
+          "fadeev",
+          "-d",
+          "tk1",
+        ]
+      interval: 2s
       timeout: 3s
-      retries: 2
+      retries: 10
 
 networks:
-  net:
+  private:
     driver: bridge
 
 volumes:

@@ -1,5 +1,3 @@
-\c "magistracy-01-db-tk-1"
-
 -- Факультет
 create table department (
                             department_id serial primary key,

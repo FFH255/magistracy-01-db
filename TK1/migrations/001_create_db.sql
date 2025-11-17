@@ -1,1 +1,0 @@
-CREATE DATABASE "magistracy-01-db-tk-1";
