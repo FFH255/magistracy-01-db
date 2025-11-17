@@ -1,6 +1,8 @@
+-- Посчитать, сколько дополнительных баллов получит каждый абитуриент.
+
 SELECT
-    e.name_enrollee as "Абитуриент",
-    SUM(COALESCE(a.bonus, 0)) as "Дополнительные баллы"
+    e.name_enrollee as enrollee_name,
+    SUM(COALESCE(a.bonus, 0)) as bonus
 FROM enrollee e
 LEFT JOIN enrollee_achievement ea
 ON e.enrollee_id = ea.enrollee_id

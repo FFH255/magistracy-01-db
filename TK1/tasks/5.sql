@@ -1,3 +1,5 @@
+-- Вывести образовательные программы. которые имеют самый большой план набора.
+
 SELECT name_program
 FROM program
 WHERE plan = (SELECT MAX(plan) FROM program)
