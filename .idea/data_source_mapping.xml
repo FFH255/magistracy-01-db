@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourcePerFileMappings">
-    <file url="file://$PROJECT_DIR$/TK1/tasks/1.sql" value="5fc68eaa-75db-426c-8da7-e4ce1fb6f526" />
-    <file url="file://$PROJECT_DIR$/TK1/tasks/10.sql" value="5fc68eaa-75db-426c-8da7-e4ce1fb6f526" />
-    <file url="file://$PROJECT_DIR$/TK1/tasks/11.sql" value="5fc68eaa-75db-426c-8da7-e4ce1fb6f526" />
-    <file url="file://$PROJECT_DIR$/TK1/tasks/12.sql" value="5fc68eaa-75db-426c-8da7-e4ce1fb6f526" />
-    <file url="file://$PROJECT_DIR$/TK1/tasks/13.sql" value="5fc68eaa-75db-426c-8da7-e4ce1fb6f526" />
-    <file url="file://$PROJECT_DIR$/TK1/tasks/14.sql" value="5fc68eaa-75db-426c-8da7-e4ce1fb6f526" />
-    <file url="file://$PROJECT_DIR$/TK1/tasks/15.sql" value="5fc68eaa-75db-426c-8da7-e4ce1fb6f526" />
-    <file url="file://$PROJECT_DIR$/TK1/tasks/2.sql" value="5fc68eaa-75db-426c-8da7-e4ce1fb6f526" />
-    <file url="file://$PROJECT_DIR$/TK1/tasks/3.sql" value="5fc68eaa-75db-426c-8da7-e4ce1fb6f526" />
-    <file url="file://$PROJECT_DIR$/TK1/tasks/4.sql" value="5fc68eaa-75db-426c-8da7-e4ce1fb6f526" />
-    <file url="file://$PROJECT_DIR$/TK1/tasks/5.sql" value="5fc68eaa-75db-426c-8da7-e4ce1fb6f526" />
-    <file url="file://$PROJECT_DIR$/TK1/tasks/6.sql" value="5fc68eaa-75db-426c-8da7-e4ce1fb6f526" />
-    <file url="file://$PROJECT_DIR$/TK1/tasks/7.sql" value="5fc68eaa-75db-426c-8da7-e4ce1fb6f526" />
-    <file url="file://$PROJECT_DIR$/TK1/tasks/8.sql" value="5fc68eaa-75db-426c-8da7-e4ce1fb6f526" />
-    <file url="file://$PROJECT_DIR$/TK1/tasks/9.sql" value="5fc68eaa-75db-426c-8da7-e4ce1fb6f526" />
+    <file url="file://$PROJECT_DIR$/TK2/migrations/001_schema.sql" value="db51b595-366b-47a1-ab9a-e59819e25812" />
+    <file url="file://$PROJECT_DIR$/TK2/migrations/002_generate_data.sql" value="db51b595-366b-47a1-ab9a-e59819e25812" />
+    <file url="file://$PROJECT_DIR$/TK2/tasks/3.sql" value="db51b595-366b-47a1-ab9a-e59819e25812" />
+    <file url="file://$PROJECT_DIR$/TK2/tasks/4.sql" value="db51b595-366b-47a1-ab9a-e59819e25812" />
   </component>
 </project>
