@@ -3,6 +3,7 @@
   <component name="DataSourcePerFileMappings">
     <file url="file://$PROJECT_DIR$/TK3/migrations/006_generate_data_for_price_dynamics.sql" value="3ee09e1d-9870-41b9-9e74-59a592a201f6" />
     <file url="file://$PROJECT_DIR$/TK3/migrations/007_generate_properties_descriptions_xml.sql" value="3ee09e1d-9870-41b9-9e74-59a592a201f6" />
-    <file url="file://$PROJECT_DIR$/TK3/tasks/1.sql" value="3ee09e1d-9870-41b9-9e74-59a592a201f6" />
+    <file url="file://$PROJECT_DIR$/TK3/tasks/3.1.sql" value="3ee09e1d-9870-41b9-9e74-59a592a201f6" />
+    <file url="file://$PROJECT_DIR$/TK3/tasks/3.2.sql" value="3ee09e1d-9870-41b9-9e74-59a592a201f6" />
   </component>
 </project>
