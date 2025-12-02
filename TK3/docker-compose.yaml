@@ -1,0 +1,36 @@
+name: db-control-task-3
+services:
+  postgres:
+    image: postgres:18
+    container_name: db-control-task-3-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: fadeev
+      POSTGRES_PASSWORD: user12345
+      POSTGRES_DB: tk3
+    volumes:
+      - db-control-task-3-pg-data:/var/lib/postgresql
+      - ./migrations:/docker-entrypoint-initdb.d
+    networks:
+      - private
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "pg_isready",
+          "-U",
+          "fadeev",
+          "-d",
+          "tk3",
+        ]
+      interval: 2s
+      timeout: 3s
+      retries: 10
+
+networks:
+  private:
+    driver: bridge
+
+volumes:
+  db-control-task-3-pg-data:

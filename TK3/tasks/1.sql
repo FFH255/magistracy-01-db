@@ -1,0 +1,1 @@
+CALL fill_properties_descriptions_xml();
